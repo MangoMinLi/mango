@@ -1,0 +1,11 @@
+#!/bin/sh
+
+#desktopFile="/etc/aqueti/ProtocolCtrl/ProCtrl.desktop"
+
+#if [ ! -f "$desktopFile" ]; then
+	#echo "ERR: install protocolCtrl deb failed. Maybe the deb package is not correct."
+#else
+	#echo "install success."
+	#cp "$desktopFile" ~/Desktop/
+#fi
+

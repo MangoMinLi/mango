@@ -1,0 +1,11 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Type=Application
+Terminal=true
+Name=ONVIF & GB
+Comment=launch aqueti camera
+Exec=/etc/aqueti/ProtocolCtrl/start.sh
+Icon=/etc/aqueti/ProtocolCtrl/logo/ProCtr.jpeg
+Categories=Utility;
+Name[en_US]=ProCtrl

@@ -1,0 +1,18 @@
+#!/bin/sh
+
+onvifLogDir="/var/tmp/aqueti/Log/"
+usrName=$(who |awk -F' ' '{print $1}' | head -1)
+#echo "$usrName"
+#sudo chown -R "$usrName":"$usrName" "/etc/aqueti"
+
+sudo cp /etc/aqueti/ProtocolCtrl/ProCtrl.desktop ~/Desktop
+sudo chmod +x ~/Desktop/ProCtrl.desktop
+sudo chmod +x /etc/aqueti/ProtocolCtrl/start.sh
+
+if [ ! -d "$onvifLogDir" ]; then
+	mkdir "$onvifLogDir"
+	chown "$usrName":"$usrName" "$onvifLogDir"
+	chmod -R 777 "$onvifLogDir"
+else
+	echo "Log Dir is exit.need do nothing."
+fi
